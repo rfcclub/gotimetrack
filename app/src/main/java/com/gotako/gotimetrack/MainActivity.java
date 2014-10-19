@@ -138,6 +138,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     }
 
     public void showHideActionMenu(int position) {
+        // enable or disable menus
         if (position == 2) {
             if (refreshMenuItem != null) {
                 refreshMenuItem.setVisible(false);
