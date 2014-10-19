@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoTimeTrack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="today_string">Today</string>
+    <string name="group_by_string">Group By</string>
+    <string name="select_string">Select</string>
+    <string name="from_string">From:</string>
+    <string name="to_string">To:</string>
+    <string name="beginning_string">Beginning</string>
+    <string name="report_string">Report</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="clear_string">Clear</string>
+    <string name="please_select_date_string">Please select a date:</string>
+    <string name="please_select_time_string">Please select a time:</string>
+    <string name="week_string">Week</string>
+    <string name="month_string">Month</string>
+    <string name="year_string">Year</string>
+    <string name="type_string">Type</string>
+    <string name="date_string">Day</string>
+    <string name="time_string">Time:</string>
+    <string name="day_string">Day:</string>
+    <string name="save_date_time_string">Save</string>
+    <string name="add_title_string">Add your track time</string>
+    <string name="edit_title_string">Edit your track time</string>
+    <string name="in_string">In</string>
+    <string name="out_string">Out</string>
+    <string name="save_success_string">Save successfully!</string>
+    
+    <string name="enable_string">Enabled</string>
+    <string name="disable_string">Disabled</string>
+    <string name="keep_data_string">Keep data for:</string>
+    <string name="one_week_string">One week</string>
+    <string name="one_month_string">One month</string>
+    <string name="one_year_string">One year</string>
+    <string name="purge_now_string">Purge now</string>
+    <string name="forever_string">Forever</string>
+    <string name="setting_lunch_string">Lunch time included</string>
+    
+    <string name="yesterday_string">Yesterday</string>
+    <string name="this_week_string">This week</string>
+    <string name="last_week_string">Last week</string>
+    <string name="this_month_string">This month</string>
+    <string name="last_month_string">Last month</string>
+    <string name="this_year_string">This year</string>
+    <string name="last_year_string">Last year</string>
+    
+	<string name="action_refresh">Refresh</string>
+	<string name="action_add">Add</string>
+	
+    <string-array name="time_to_keep_array">
+        <item>Forever</item>
+        <item>One week</item>
+        <item>One month</item>
+        <item>One year</item>
+    </string-array>
+</resources>

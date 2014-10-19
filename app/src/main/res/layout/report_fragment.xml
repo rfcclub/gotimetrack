@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/total_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_criteria"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/textViewFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/from_string"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewFromButton"
+            style="?android:attr/spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:onClick="showFromDateDialog"
+            android:text="@string/group_by_string"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="@string/to_string"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewToButton"
+            style="?android:attr/spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showToDateDialog"
+            android:text="@string/group_by_string"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_criteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+
+<!--         <TextView
+            android:id="@+id/textViewGroupBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_by_string"
+            android:textSize="13sp" /> -->
+
+        	<info.hoang8f.android.segmented.SegmentedGroup
+				    android:id="@+id/segmentedGroupBy"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_margin="10dp"
+				    android:orientation="horizontal">
+			    <RadioButton
+			        android:id="@+id/buttonDay"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/date_string"
+			        android:checked="true"
+			        style="@style/RadioButton" />		
+		
+			    <RadioButton
+			        android:id="@+id/buttonWeek"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/week_string"
+			        style="@style/RadioButton" />
+			
+			    <RadioButton
+			        android:id="@+id/buttonMonth"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/month_string"
+			        style="@style/RadioButton" />
+			    <RadioButton
+			        android:id="@+id/buttonYear"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/year_string"
+			        style="@style/RadioButton" />
+			</info.hoang8f.android.segmented.SegmentedGroup>
+
+<!--         <Button
+            android:id="@+id/buttonReport"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_string" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_footer"
+        android:layout_alignLeft="@+id/total_header"
+        android:layout_alignRight="@+id/total_header"
+        android:layout_below="@+id/total_header"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <!--
+             <ListView
+            android:id="@+id/listMoneyTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" >           
+        </ListView>
+        -->
+
+        <ExpandableListView
+            android:id="@+id/listTimeTrack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indicatorLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+<!--         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Bar Graph" />
+
+        </LinearLayout> -->
+    </LinearLayout>
+</RelativeLayout>

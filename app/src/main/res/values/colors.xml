@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alarm_background">#ffdb1304</color>
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="expense">#ffeb3838</color>
+    <color name="income">#ff2fed46</color>
+    
+    <color name="button_color">#ffED1B24</color>
+    <color name="button_pressed_color">#ffFF6A30</color>
+    <color name="button_text_color">#ffffffff</color>
+</resources>

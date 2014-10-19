@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/textWidgetWorkingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch time included"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/switchLunchEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textOn="@string/enable_string"
+            android:textOff="@string/disable_string" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTimeSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/textViewFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/from_string"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewFromButton"
+            style="?android:attr/spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:onClick="showFromDateDialog"
+            android:text="12 : 00"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:text="@string/to_string"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewToButton"
+            style="?android:attr/spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showToDateDialog"
+            android:text="13 : 00"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textWidgetGoOutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keep_data_string"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDateKeep"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/buttonPurge"
+            android:layout_width="100dp"
+	        android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_selector_background"
+            android:textColor="@color/button_text_color"
+            android:textSize="13sp"
+            android:text="@string/purge_now_string" />
+
+    </LinearLayout>
+
+</LinearLayout>

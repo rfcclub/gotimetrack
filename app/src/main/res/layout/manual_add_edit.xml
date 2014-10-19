@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddIncomeActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+		    <TextView
+		        android:id="@+id/tagsString"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/add_title_string"
+		        android:layout_marginTop="7dp"
+		        android:textSize="13sp"  />
+		    
+		    <TableLayout
+		        android:id="@+id/TableLayout2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/tagsString"
+		        android:layout_marginTop="2dp" >
+	        
+		        <TableRow
+		            android:id="@+id/tableRow6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dp"
+		            android:paddingBottom="2dp"
+		            android:paddingRight="5dp"
+		            android:paddingTop="2dp" >
+					<TextView
+		                android:id="@+id/textType"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="1"
+		                android:layout_weight="1"
+		                android:layout_gravity="center"
+		                android:text="@string/type_string"
+		                android:textSize="13sp"  />
+		
+		            <Spinner
+		                android:id="@+id/spinnerType"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="2"
+		                android:layout_weight="1"
+		                android:gravity="center"
+		                android:textSize="13sp" 
+		                android:text="" />
+		        </TableRow>
+		
+		        <TableRow
+		            android:id="@+id/trManual2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dp"
+		            android:paddingBottom="2dp"
+		            android:paddingRight="5dp"
+		            android:paddingTop="2dp" >
+		
+		            <TextView
+		                android:id="@+id/textManualTime1"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="1"
+		                android:layout_weight="1"
+		                android:text="@string/day_string"
+		                android:textSize="13sp" />
+		
+		            <TextView
+		                android:id="@+id/buttonSelectDate"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="2"
+		                android:layout_weight="1"
+		                android:gravity="center"
+		                style="?android:attr/spinnerStyle"
+		                android:onClick="showDatePickerDialog"
+		                android:textSize="13sp" 
+		                android:text="" />
+		
+		        </TableRow>
+		        
+		        <TableRow
+		            android:id="@+id/trManual3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dp"
+		            android:paddingBottom="2dp"
+		            android:paddingRight="5dp"
+		            android:paddingTop="2dp" >
+		
+		            <TextView
+		                android:id="@+id/textManualTime"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="1"
+		                android:layout_weight="1"
+		                android:text="@string/time_string"
+		                android:textSize="13sp" />
+		
+		            <TextView
+		                android:id="@+id/buttonSelectTime"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_column="2"
+		                android:layout_weight="1"
+		                android:gravity="center"
+		                style="?android:attr/spinnerStyle"
+		                android:onClick="showDatePickerDialog"
+		                android:textSize="13sp" 
+		                android:text="" />
+		
+		        </TableRow>
+		        
+		    </TableLayout>
+		
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/TableLayout2"
+		        android:orientation="horizontal" >
+		
+		        <Button
+		            android:id="@+id/buttonAddIncome"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/save_date_time_string"
+		            android:layout_weight="0.5" />
+		
+		    </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
