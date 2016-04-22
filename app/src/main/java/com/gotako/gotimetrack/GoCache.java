@@ -24,7 +24,7 @@ public class GoCache {
 
     public static GoCache getInstance() {
         if (cache == null) {
-            cache = new GoCache();
+            cache=new GoCache();
         }
 
         return cache;
