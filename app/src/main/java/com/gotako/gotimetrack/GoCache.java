@@ -50,7 +50,7 @@ public class GoCache {
         return databaseHelper;
     }
 	
-	public DatabaseHelper databaseHelper() {
+	public DatabaseHelper databaseHelperGet() {
 		return databaseHelper;
 	}
     public void setDatabaseHelper(DatabaseHelper databaseHelper) {
