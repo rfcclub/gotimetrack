@@ -40,7 +40,8 @@ public class GoSetting {
         lunchTimeEnabled = prefs.getBoolean("LunchTimeEnabled", false);
         lunchTimeStart = prefs.getString("LunchTimeStart", null);
         lunchTimeEnd = prefs.getString("LunchTimeEnd", null);
-        timeToKeepSelection = prefs.getInt("TimeToKeepSelection", 0);
+        timeToKeepSelection=prefs.getInt("TimeToKeepSelection", 0);
+		
     }
 
     public boolean isLunchTimeEnabled() {
