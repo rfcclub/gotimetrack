@@ -11,6 +11,7 @@ so manually move them:
 * gotimetrack.zip
 * ic_launcher-web.png
 * proguard-project.txt
+-- BLA BLA BLA ----
 
 Replaced Jars with Dependencies:
 --------------------------------
