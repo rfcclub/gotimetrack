@@ -39,7 +39,7 @@ public class GoCache {
     }
 
     public List<DateTimeModel> getDateTimeList() {
-        return dateTimeList;
+        return  dateTimeList;
     }
 
     public void setDateTimeList(List<DateTimeModel> dateTimeList) {
@@ -49,7 +49,10 @@ public class GoCache {
     public DatabaseHelper getDatabaseHelper() {
         return databaseHelper;
     }
-
+	
+	public DatabaseHelper databaseHelper() {
+		return databaseHelper;
+	}
     public void setDatabaseHelper(DatabaseHelper databaseHelper) {
         this.databaseHelper = databaseHelper;
     }
